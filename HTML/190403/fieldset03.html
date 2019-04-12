@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>회원가입 폼</title>
+        <style>
+        .a{
+            background-color:yellowgreen;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <form>
+        <table border>
+            <caption><h3>회원가입</h3></caption>
+
+            <colgroup>
+                    <col span="1" bgcolor="#A9E2F3" class="a">
+            </colgroup>
+
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="id"> <input type="submit" value="중복확인"></td>
+            </tr>
+            <tr>
+                <td >이름</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td >성별</td>
+                <td><input type="radio" name="gender" value="남">남
+                    <input type="radio" name="gender" value="여" checked>여
+                </td>
+            </tr>
+            <tr>
+                <td>암호</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>암호확인</td>
+                <td><input type="password"> *같은 암호를 입력하세요</td> 
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input type="email"> @ <input type="email"> 
+                    <select name="mail">
+                            <option value="naver">naver.com</option>
+                            <option value="daum">daum.net</option>
+                            <option value="google">google.com</option>
+                        </select></td>
+            </tr>
+            <tr>
+                <td>주소</td>
+                <td><input type="text"> <input type="button" value="주소찾기"></td>
+            </tr>
+            <tr>
+                <td>휴대폰</td>
+                <td>
+                        <input type="radio" name="phone" value="skt">SKT
+                        <input type="radio" name="phone" value="kt">KT
+                        <input type="radio" name="phone" value="lg">LGU+<br>
+                        <select name="telnum">
+                            <option value="010">010</option>
+                            <option value="02">02</option>
+                            <option value="011">011</option>
+                        </select>
+                        -<input type="tel" size="4">-<input type="tel" size="4">
+                </td>
+            </tr>
+            <tr>
+                <td>관심</td>
+                <td><input type="checkbox" name="interesting" value="shopping">쇼핑
+                    <input type="checkbox" name="interesting" value="game">게임
+                    <input type="checkbox" name="interesting" value="travle">여행
+                    <input type="checkbox" name="interesting" value="other">기타
+                    </td>
+            </tr>
+            <tr>
+                <td>자기소개</td>
+                <td><textarea rows="10" cols="60" name="myintro"></textarea></td>
+            </tr>
+                <tr bgcolor="white">
+                    <td colspan="2" style="text-align: center"><input type="submit" value="확인"> <input type="reset" value="다시입력"></td> 
+                </tr>
+                
+        </table>
+        
+    </form>
+    </body>
+</html>
