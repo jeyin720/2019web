@@ -4,6 +4,7 @@
         <title>버튼만들기</title>
     </head>
     <body>
+        <form>
         <h3>HTML5 웹 프로그래밍 = HTML5 + CSS + JAVASCRIPT</h3>
         <a href = "https://www.w3schools.com/"><button type = "button">Learn HTML5</button></a>
         <a href = "https://www.w3schools.com/"><button type = "button">CSS3</button></a>
@@ -18,7 +19,7 @@
         <h3>방명록 작성하기</h3>
         <textarea rows=6 cols=30 name="txt">방문흔적</textarea> <br>
         <button type="button">저장</button>
-        <input type="reset" name="remove" value="지우기"/>
+        <input type="reset" name="remove" value="지우기" onclick="alert('버튼클릭');"/>
         <button type="reset">지우기</button>
         
         <hr>
@@ -48,13 +49,14 @@
         <h3>먹고 싶은 것 하나만 선택?</h3>
         <hr>
         <label >
-        <input type="radio" name="eat" value="짜장면"> 짜장면<img src="img/jjajang.jpg" ></label><br>
+        <input type="radio" name="eat" value="짜장면"> 짜장면<img src="../../img/jjajang.jpg" ></label><br>
         <label>
-        <input type="radio" name="eat" value="짬뽕" checked>짬뽕<img src="img/jjambbong.jpg" height=150></label> <br>
+        <input type="radio" name="eat" value="짬뽕" checked>짬뽕<img src="../../img/jjambbong.jpg" height=150></label> <br>
         <label>
-        <input type="radio" name="eat" value="탕수육">탕수육<img src="img/tangsuyook.jpg"> </label><br>
+        <input type="radio" name="eat" value="탕수육">탕수육<img src="../../img/tangsuyook.jpg"> </label><br>
         <hr>
         <label for="txt">아이디</label>
         <input type="text" name="id" id="txt"/>
+    </form>
     </body>
 </html>
