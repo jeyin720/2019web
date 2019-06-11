@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        img{
+            float:left;
+        }
+        td{
+            width:150px;
+            height: 50px;
+        }
+        hr{
+            border:1px solid indianred;
+            background-color:indianred;
+        }
+        #money{
+            color:indigo;
+            font-weight: bold;
+            font-size:18pt;
+        }
+        </style>
+    </head>
+    <body>
+        <img src="img/black.PNG" width="300" height="400">
+        <h4>블랙소르베</h4>
+        <hr>
+        <table>
+            <tr>
+                <td>판매가</td>
+                <td>3000</td>
+            </tr>
+            <tr>
+                <td>상품코드</td>
+                <td>E9082E</td>
+            </tr>
+            <tr>
+                <td>크기</td>
+                <td><select name="size">
+                    <option>파인트</option>
+                    <option>쿼터</option>
+                    <option>패밀리</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>구매수량</td>
+                <td><select name="count">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>배송비</td>
+                <td>무료배송</td>
+            </tr>
+            <tr><td>결제금액</td>
+            <td id="money">3,000원</td></tr>
+        </table>
+        <input type="submit" value="장바구니">
+        <input type="submit" value="구매하기">
+        
+    </body>
+</html>

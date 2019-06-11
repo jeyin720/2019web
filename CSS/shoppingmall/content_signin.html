@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            th{
+                color:white;
+                background-color:rgb(31, 31, 73);
+                width:100px;
+                height:50px;
+            }
+            table{
+                border:1px solid gray;
+            }
+            td{
+                border:1px solid gray;
+            }
+            div{
+                text-align: center;
+                width:600px;
+            }
+            .a{
+                width:700px;
+                margin:0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="a">
+            <br>
+            <br>
+            <form>
+                <table>
+                    <tr>
+                        <th>이름</th>
+                        <td><input type="text"></td>
+                        <th>생년월일</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td><input type="text" placeholder="id@naver.com"></td>
+                        <th>비밀번호 확인</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>주소</th>
+                        <td><select name="area">
+                            <option value="seoul">서울특별시</option>
+                            <option value="gyeonggi">경기도</option>
+                            <option value="gwangju">광주특별시</option>
+                        </select>
+                        <input type="text" placeholder="상세주소">
+                    </td>
+                    <th>성별</th>
+                    <td><input type="radio" name="gender" vlaue="male">남자<input type="radio" name="gender" value="female">여자</td>
+                    </tr>
+                    <tr>
+                        <th>연락처</th>
+                        <td><input type="text"></td>
+                        <th>정보수신</th>
+                        <td><input type="checkbox" name="info" value="이메일">이메일<input type="checkbox" name="info" value="SNS">SNS</td>
+                    </tr>
+                    <tr>
+                        <th> 
+                         메모
+                        </th>
+                        <td colspan="3">
+                            <textarea rows=5 cols=80 name="memo">메모를 남겨주세요 </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                </table>
+                <br>
+                <div>
+                    <input type="submit" name="cancle" value="취소">
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="submit" name="ok" value="등록">
+                    </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+        
+        table{
+            border-color:gray;
+            border-top:4px solid blue;
+            border-bottom:4px solid blue;
+            border-right-color:aqua;
+            border-left-color:aqua;
+
+            background-color:skyblue;
+            border-collapse:collapse;
+        }
+        th{
+            background-color:lightgray;
+            border-bottom:3px solid blue;
+            border-right-color:aqua;
+            border-left-color:aqua;
+
+        }
+        tr:hover{
+            background-color:orange;
+        }
+        .c0{
+            border-left-color:aqua;
+        }
+    </style>
+    </head>
+    <body>
+        <table border style="text-align: center" height="200">
+            <caption>수업시간표</caption>
+            <tr>
+                <th width="100" class="c0">시간/요일</th>
+                <th width="100" >월</th>
+                <th width="100">화</th>
+                <th width="100" >수</th>
+                <th width="100" class="c0">목</th>
+            </tr>
+            <tr>
+                <td class="c0">1</td>
+                <td></td>
+                <td></td>
+                <td class="c4"></td>
+                <td rowspan="3" class="c4">CSS</td>
+            </tr>
+            <tr>
+                <td class="c0">2</td>
+                <td rowspan="2">HTML5</td>
+                <td></td>
+                <td class="c4"></td>
+            </tr>
+            <tr>
+                <td class="c0">3</td>
+                <td></td>
+                <td class="c4"></td>
+            </tr>
+            <tr>
+                <td class="c0">4</td>
+                <td></td>
+                <td colspan="2">JavaScript</td>
+                <td class="c4"></td>
+            </tr>
+            <tr>
+                <td class="c0">5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="c4"></td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin:0;
+            }
+        #header{
+            width:100%;
+            height:150px;
+            background-image:url("img/main_back2.jpg");
+            background-size: 100% 150px;
+            color:rebeccapurple;
+            text-align: center;
+            line-height: 150px;
+        }
+        #menu{
+            display:inline-block;
+            float:left;
+            width:15%;
+            height:500px;
+            background-color:#f1bbba;
+        }
+        .menu{
+            margin:5px;
+            width:95%;
+            height:70px;
+            text-align: center;
+            line-height:70px;
+        }
+        .menu:hover{
+            color:#71226e;
+            background-color:#eb9f9f;
+            border-radius: 20px;
+        }
+        a:link{
+            color:black;
+            text-decoration: none;
+        }
+        a:visited{
+            color:black;
+            text-decoration: none;
+        }
+        a:hover{
+            color:#71226e;
+            font-weight: bold;
+        }
+        
+        #content{
+            display:inline-block;
+            float:left;
+            width:70%;
+            height:500px;
+            text-align: center;
+            line-height: 500px;
+        }
+        #aside{
+            display:inline-block;
+            float:left;
+            width:15%;
+            height:500px;
+            background-color:#f8ecc9;
+        }
+        #footer{
+            display:inline-block;
+            width:100%;
+            height:150px;
+            text-align: center;
+            line-height: 50px;
+            background-color:#a79c8e;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id=header>
+                <h2>77 아이스 쇼핑몰</h2>
+            </div>
+            <div id="menu">
+                <div class="menu"><a href="content_signin.html" target=content>회원가입</a></div>
+                <div class="menu"><a href="#">마이 페이지</a></div>
+                <div class="menu"><a href="content_allmenu.html" target=content>전체상품보기</a></div>
+                <div class="menu"><a href="content_chuchun.html" target=content>추천 상품</a></div>
+                <div class="menu"><a href="#">장바구니</a></div>
+            </div>
+            <div id="content">
+                <iframe src="content_main.html" name="content" width="1000" height="500"></iframe>
+            </div>
+            <div id="aside">
+
+            </div>
+            <div id="footer">
+                연락처 : 000-0000-0000  ⓒright: 웹-페이지 개발자
+            </div>
+        </div>
+    </body>
+</html>
