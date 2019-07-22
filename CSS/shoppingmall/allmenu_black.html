@@ -18,10 +18,22 @@
             font-weight: bold;
             font-size:18pt;
         }
+        .b1{
+            width:110px;
+            height:50px;
+            background-color:gray;
+            color:white;
+        }
+        .b2{
+            width:110px;
+            height:50px;
+            background-color:rgb(44, 44, 194);
+            color:white;
+        }
         </style>
     </head>
     <body>
-        <img src="img/black.PNG" width="300" height="400">
+        <img src="img/black.PNG" width="350" height="400">
         <h4>블랙소르베</h4>
         <hr>
         <table>
@@ -43,11 +55,7 @@
             </tr>
             <tr>
                 <td>구매수량</td>
-                <td><select name="count">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select></td>
+                <td> <input type="number" value="1"></td>
             </tr>
             <tr>
                 <td>배송비</td>
@@ -56,8 +64,8 @@
             <tr><td>결제금액</td>
             <td id="money">3,000원</td></tr>
         </table>
-        <input type="submit" value="장바구니">
-        <input type="submit" value="구매하기">
+        <input type="submit" value="장바구니" class="b1">
+        <input type="submit" value="구매하기" class="b2">
         
     </body>
 </html>

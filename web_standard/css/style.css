@@ -1,0 +1,74 @@
+/*레이아웃*/
+#wrap{width: 100%;}
+#header{height: 325px;background: #111; background:url(../img/header_bg.jpg) top center repeat-x;}
+#contents{}
+#footer{width: 100%;height: 200px;background: #333;}
+
+/* 스킵 메뉴*/
+#skip{position:absolute;}
+#skip a{position: absolute; left:5px; top:-40px; color:#fff;width:130px;height:30px;font-size:11px;}
+#skip a:active,#skip a:focus{top:0;}
+
+/*컨텐츠 레이아웃*/
+#cont_nav{width: 100%;height: 200px;}
+#cont_tit{background: #eaf7fd;}
+#cont_ban{}
+#cont_cont{width: 100%;height: 200px;background: #666;}
+
+/*컨테이너*/
+.container{width: 990px;margin: 0 auto;height:inherit;background:rgba(214, 214, 214, 0.3);}
+
+/*헤더 메뉴*/
+.header{ }
+.header .header-menu{text-align: right; }
+.header .header-menu a{display:inline-block;color:#fff;padding:10px; }
+
+.header-tit{text-align:center;}
+.header-tit h1{color:white; background:#4aa8d4; text-transform: uppercase; padding:5px;display:inline-block;margin-top:30px;}
+.header-tit a{color:white; background-color:#2698cb; padding:6px;display:inline-block;margin-top:-5px;}
+
+/*헤더아이콘*/
+.header .header-icon{text-align: center; margin:20px;}
+.header .header-icon a{width:60px; height:60px; background:url(../img/icon.png); display:inline-block;}
+
+.header .header-icon a.icon1{background-position:0 0;}
+.header .header-icon a.icon2{background-position: 0 -60px;}
+.header .header-icon a.icon3{background-position: 0 -120px;}
+.header .header-icon a.icon4{background-position: 0 -180px;}
+
+.header .header-icon a.icon1:hover{background-position: -60px 0;}
+.header .header-icon a.icon2:hover{background-position: -60px -60px;}
+.header .header-icon a.icon3:hover{background-position: -60px -120px;}
+.header .header-icon a.icon4:hover{background-position: -60px -180px;}
+
+/*전체 메뉴*/
+.nav{margin-top:20px;}
+.nav > div{width:40%;float:left; }
+.nav > div:last-child{width:20%;}
+.nav > div h3{font-size:18px;color:#25a2d0;margin-bottom: 4px;}
+.nav > div ol li{float:left; width:50%;}
+.nav > div:last-child ol li{width:100%;}
+.nav > div ol li a:hover{text-decoration: underline;}
+
+/* 타이틀 */
+.tit{height: 60px;text-align:center; position:relative;line-height:60px;}
+.tit h2{font-family: 'Nanum Brush Script', cursive; color:#2c94c4; font-size:24px; letter-spacing: 2px;}
+.tit .btn{width:60px; height:60px; background:url(../img/icon.png); background-position: 0 -600px; position:absolute; top:0;right:0;display:inline-block;}
+.tit .btn:hover{background-position: -60px -600px;}
+
+/*배너*/
+.ban{height:135px;position: relative; padding-top:10px;}
+.ban .prev{position: absolute;left:-60px;top:60px; width:43px; height:43px; background:url(../img/icon.png) no-repeat -150px 0;}
+.ban .next{position: absolute;right:-60px; top:60px;  width:43px; height:43px; background:url(../img/icon.png) no-repeat -150px -43px;}
+
+.ban ul{overflow: hidden;}
+.ban ul li{float:left; width:330px;}
+.ban ul li.ban_img1{text-align: left;}
+.ban ul li.ban_img2{text-align:center;}
+.ban ul li.ban_img3{text-align: right;}
+
+.ban ul img{border:3px solid lightgrey;}
+.ban ul img:hover{border:3px solid rgb(177, 238, 177);}
+
+
+

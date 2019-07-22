@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .name{
+            font-weight: bold;
+        }
+        .info{
+            color:green;
+        }
+        .top{
+            text-align: center;
+            font-weight: bold;
+        }
+        td{
+            border:1px solid lightgray;
+        }
+        table{
+            border-left:none;
+            border-right:none;
+            
+        }
+        .chong{
+            border:2px solid lightslategray;
+            font-size:2em;
+            font-weight: bold;
+            padding:10px;
+            margin:5px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>장바구니</h1>
+        <table>
+            <tr class="top">
+                <td>전체선택</td>
+                <td></td>
+                <td>상품정보</td>
+                <td>상품금액</td>
+            </tr>
+            <tr><td rowspan="2"><input type="checkbox" name="cart"></td>
+                <td rowspan="2"><img src="img/쫀떡궁합.PNG" width="100" height="100"></td>
+                <td class="name">쫀떡궁합, 파인트, 1개</td>
+                <td rowspan="2"> &nbsp;&nbsp;  3,000원</td>
+            </tr>
+            <tr>
+                <td class="info">오후 3:15 도착 보장    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    3,000원
+                    <input type="number" value=1 min=1 max=9>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: right; " height="80">
+                    상품가격 <strong>3,000원</strong> + 배송비 <b>무료</b> = 주문금액 3,000원
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <input type="checkbox" name="all"> 전체선택( 1 / 1 ) &nbsp;&nbsp;
+        <input type="submit" value="전체삭제">
+        <input type="submit" value="품절/판매종료상품 전체삭제">
+        <br>
+        <div class="chong">
+            총 상품 가격 : 3000원 + 배송비 : 0원 = 총 금액 :3,000원
+        </div>
+    </body>
+</html>
