@@ -10,13 +10,13 @@
 #skip a:active,#skip a:focus{top:0;}
 
 /*컨텐츠 레이아웃*/
-#cont_nav{width: 100%;height: 200px;}
+#cont_nav{width: 100%;height: 200px;background:#f6fdff;}
 #cont_tit{background: #eaf7fd;}
 #cont_ban{}
-#cont_cont{width: 100%;height: 200px;background: #666;}
+#cont_cont{background:#f6fdff;}
 
 /*컨테이너*/
-.container{width: 990px;margin: 0 auto;height:inherit;background:rgba(214, 214, 214, 0.3);}
+.container{width: 990px;margin: 0 auto;height:inherit;}
 
 /*헤더 메뉴*/
 .header{ }
@@ -70,5 +70,77 @@
 .ban ul img{border:3px solid lightgrey;}
 .ban ul img:hover{border:3px solid rgb(177, 238, 177);}
 
+/* 컨텐츠 레이아웃 */
+.cont{overflow: hidden;}/*하위에 float:left를 주면 부모한테 overflow:hidden을 주어야 함*/
+.cont .column{width:288px;height: 362px;float:left;margin:0 30px 30px 0;position: relative;}
+.cont .col1{border-right:1px solid #c8c8c8;}
+.cont .col2{border-right:1px solid #c8c8c8;}
+.cont .col3{border-right:1px solid #c8c8c8;}
+.cont .col4{border-right:1px solid #c8c8c8;}
+.cont .col5{border-right:1px solid #c8c8c8;}
+.cont .col6{border-right:1px solid #c8c8c8;}
 
+.cont .column .ico_img{display:block;background:url(../img/icon.png) no-repeat; position: absolute; left:0; top:0;width:60px;height:60px;}
+.cont .column .ico_tit{color:#2c94c4; font-size: 16px; padding-left: 70px;}
+.cont .column .ico_desc{padding-left: 70px; border-bottom: 1px solid #d0d0d0; padding-bottom: 25px;}
 
+.cont .col1 .ico_img{background-position: 0 -240px;}
+.cont .col2 .ico_img{background-position: 0 -300px;}
+.cont .col3 .ico_img{background-position: 0 -360px;}
+.cont .col4 .ico_img{background-position: 0 -420px;}
+.cont .col5 .ico_img{background-position: 0 -480px;}
+.cont .col6 .ico_img{background-position: 0 -540px;}
+
+.cont .col1 .ico_img:hover{background-position: -60px -240px;}
+.cont .col2 .ico_img:hover{background-position: -60px -300px;}
+.cont .col3 .ico_img:hover{background-position: -60px -360px;}
+.cont .col4 .ico_img:hover{background-position: -60px -420px;}
+.cont .col5 .ico_img:hover{background-position: -60px -480px;}
+.cont .col6 .ico_img:hover{background-position: -60px -540px;}
+
+/* 게시판 */
+.notice{position: relative; margin-top:10px;margin-right:10px;}
+.notice h4{font-size: 14px; color:#0093bd; font-weight: bold;padding-bottom:7px;}
+.notice ul{}
+.notice li{overflow:hidden; text-overflow: ellipsis; white-space: nowrap; background:url(../img/dot.gif) no-repeat 0 7px; padding-left: 7px;} /*두줄을 한줄로 하는 속성 3가지*/
+.notice ul li a{font-size:12px;}
+.notice a.more{background:url(../img/icon.png) no-repeat -150px -90px; width: 17px;height: 17px; position: absolute; right:0; top:0;}
+
+/* 게시판 1-2*/
+.notice2{position: relative; margin-top:10px; }
+.notice2 h4{font-size: 14px; color:#0093bd; font-weight: bold;padding-bottom:7px;}
+.notice2 ul li span{font-size:12px; float:right; width:30%;}
+.notice2 ul li{background:url(../img/dot.gif) no-repeat 0 7px; padding-left: 7px; overflow:hidden;} /*두줄을 한줄로 하는 속성 3가지*/
+.notice2 ul li a{font-size:12px; float:left; width:60%; overflow:hidden; text-overflow: ellipsis; white-space: nowrap; }
+.notice2 a.more{background:url(../img/icon.png) no-repeat -150px -90px; width: 17px;height: 17px; position: absolute; right:10px; top:0;}
+
+/* 게시판 2 */
+.notice3{margin-top:10px;position: relative;}
+.notice3 h4{font-size: 14px; color:#0093bd; font-weight: bold;padding-bottom:7px;}
+.notice3 li{position: relative; padding-bottom:20px;overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice3 ul li a img{width: 51px;height: 50px; position: absolute;left:0; top:0;border:1px solid #0093bd;}
+.notice3 ul li a strong{display: block;padding-left:60px;padding-top:5px;}
+.notice3 ul li a span{font-size:12px;padding-left:60px;}
+.notice3 a.more{background:url(../img/icon.png) no-repeat -150px -90px; width: 17px;height: 17px; position: absolute; right:10px; top:0;}
+
+/* 마우스 오버효과 1*/
+.notice_over{margin-top:10px;}
+.notice_over h4{font-size: 14px; color:#0093bd; font-weight: bold;padding-bottom:7px;}
+.notice_over ul{overflow: hidden;}
+.notice_over li{float:left; width:83px; margin-right: 7px; text-align: center;}
+.notice_over li a span{position: relative; display:block;height:83px; margin-bottom:5px; }
+.notice_over li a span img{width:100%;height:83px;}
+.notice_over li a span em{visibility:hidden; position: absolute; left:0;top:0; background:rgba(0,0,0,0.7);width:100%;text-align: center;line-height: 83px;}
+.notice_over li a strong{}
+.notice_over li a span:hover em{visibility: visible; }
+
+/* 마우스 오버효과 2*/
+.notice_over2{}
+.notice_over2 h4{font-size: 14px; color:#0093bd; font-weight: bold;padding-bottom:7px;}
+.notice_over2 ul{overflow: hidden;}
+.notice_over2 li{float:left; width:83px; margin-right: 7px; text-align: center;}
+.notice_over2 li a span{position: relative; display:block; height:83px;margin-bottom:5px;}
+.notice_over2 li a span img{width:100%;height:83px;}
+.notice_over2 li a span em{visibility:hidden;position: absolute; left:0;bottom:0; background:rgba(0,0,0,0.5);width:100%;height:20px;text-align: center;color:white; font-style: normal;}
+.notice_over2 li a strong{}
+.notice_over2 li a span:hover em{visibility: visible;}
