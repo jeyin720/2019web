@@ -15,3 +15,6 @@ body,input,textarea,select,button,table{ font-family: 'Nanum Gothic','돋움','�
 
 /*블릿 기호 초기화*/
 ul,li,ol,dl,menu{list-style-type: none;}
+
+/* 테두리 초기화 */
+img, fieldset{border:0;}
