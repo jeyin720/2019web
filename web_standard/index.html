@@ -379,10 +379,11 @@
         //레이어 팝업
         $(".layer").click(function(event){
             event.preventDefault();
-            $("#layer").css("display","block");
+            //$("#layer").css("display","block");
+            $("#layer").slideDown();
         });
         $("#layer .close").click(function(event){
-            $("#layer").fadeOut("slow");
+            $("#layer").fadeOut("slow"); 
         });
         
         </script>
