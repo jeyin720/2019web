@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>1. js 삽입위치(이벤트리스너에 삽입)</title>
+        <style>
+         body{background:lightgreen;text-align: center;}
+         img{width: 300px;height: 300px;}
+        </style>
+        <script>
+        
+        </script>
+    </head>
+    <body>
+        <!-- <img src="img/peach1.PNG" onclick="alert('peach hello!');"> -->
+        <img src="img/peach1.PNG" onclick="this.src='img/peach2.PNG';">
+        <img src="img/peach2.PNG" onmouseover="this.src='img/peach3.PNG';" onmouseout="this.src='img/peach2.PNG';">
+    </body>
+</html>

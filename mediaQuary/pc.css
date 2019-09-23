@@ -1,6 +1,6 @@
-body{background-color:lightcoral;}
+
 
 .left, .right{position: absolute;top:0;width:100px;height: 300px;}
 .center{background:violet;height:300px;}
-.left{background:skyblue;left:0;}
-.right{background:yellow;right:0;}
+.left{background:skyblue;Left:0;}
+.right{background:yellow;Right:0;}
