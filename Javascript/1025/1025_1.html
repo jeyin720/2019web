@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h3>랜덤 숫자 10개 구하기(최댓값, 정렬)</h3>
+        <hr>
+        <script>
+            var rand=new Array();
+            var ran=new Array();
+            var big=0;
+            for(var i=0;i<10;i++){
+                ran[i]=Math.random()*100+1;
+                rand[i]=Math.floor(ran[i]);
+                document.write(rand[i]+" ");
+                if(big<rand[i]) big=rand[i];
+            }
+            document.write("<br><h3>제일 큰 수</h3>");
+            document.write(big+"<br><hr>");
+            for(var i=0;i<10;i++){
+                for(var j=i+1;j<10;j++){
+                    if(rand[i]>rand[j]){
+                        var temp=rand[i];
+                        rand[i]=rand[j];
+                        rand[j]=temp;
+                    }
+                }
+            }
+            for(var i=0;i<10;i++){
+                document.write(rand[i]+" ");
+            }
+        </script>
+    </body>
+</html>

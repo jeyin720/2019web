@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            var score= prompt("점수를 입력하세요", "");
+            a=parseInt(score);
+            switch((a-a%10)/10){
+                case 10: case 9:  document.write("A"); break;
+                case 8:  document.write("B");break;
+                case 7:  document.write("C");break;
+                case 6:  document.write("D");break;
+                default: document.write("E");break;
+            }
+        </script>
+    </body>
+</html>

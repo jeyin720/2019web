@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function pr(msg, arr){
+                document.write(msg+arr.toString());
+                document.write("<br>");
+            }
+            var a=new Array("kim","Lee","Park");
+            var b= new Array("chang");
+            var c;
+            pr("배열 a = ",a);
+            pr("배열 b = ",b);
+            document.write("<hr>");
+
+            c=a.concat(b);
+            pr("c = a.concat(b) 후 c = ",c); //kimLeeParkchang
+            pr("c = a.concat(b) 후 a = ",a); //KimLeePark
+
+            c=a.join("##");
+            pr("c = a.join() 후 c = ",c);
+            pr("c = a.join() 후 a = ",a);
+
+            c= a.reverse();
+            pr("c = a.reverse() 후 c = ",c);//ParkLeeKim
+            pr("c = a.reverse() 후 a = ",a);//ParkLeeKim
+
+            c=a.slice(1,2);
+            pr("c = a.slice(1,2) 후 c = ",c);
+            pr("c = a.slice(1,2) 후 a = ",a);
+            
+            
+            
+            
+        </script>
+    </body>
+</html>

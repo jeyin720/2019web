@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            var number=[1,2,3,4,5];
+            var jjak=0;
+            var hol=0;
+            for(var i=0;i<5;i++){
+                number[i]=prompt("정수 입력");
+                if(number[i]%2==1){
+                    hol+=parseInt(number[i]);
+                }
+                else{
+                    jjak+=parseInt(number[i]);
+                }
+            }
+
+            document.write("짝수의 합:"+jjak+"<br>");
+            document.write("홀수의 합:"+hol);
+        </script>
+    </body>
+</html>

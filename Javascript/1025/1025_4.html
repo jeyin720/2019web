@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h3>prompt함수로 5개 입력받아 역순으로 출력</h3>
+        <hr>
+        <script>
+            var arr=new Array();
+            for(var i=0;i<5;i++){
+                arr[i]=prompt("수를 입력해");
+                document.write(arr[i]+" ");
+            }
+            document.write("<br><hr>");
+            for(var i=4;i>=0;i--){
+                document.write(arr[i]+" ");
+            }
+            document.write("<br>");
+            document.write(arr.reverse());
+            
+        </script>
+    </body>
+</html>

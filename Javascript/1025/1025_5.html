@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h3>오전이면 오렌지 오후면 살먼</h3>
+        <hr>
+        <script>
+            var date=new Date();
+            document.write(date.getHours()+"시");
+            if(date.getHours()>12) document.body.style.backgroundColor="salmon";
+            else document.body.style.backgroundColor="orange";
+        </script>
+    </body>
+</html>

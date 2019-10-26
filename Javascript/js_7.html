@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            .btn{width:130px; background:navy; color:white; border:0; height:30px; padding:0;}
+            .input_text{width:130px;}
+            td{width:130px; text-align: center;}
+        </style>
+        <script>
+            function calc(){
+                var a=document.getElementById("first").value;
+                var b=document.getElementById("second").value;
+
+                var c=parseInt(a)+parseInt(b);
+                
+                document.getElementById("result").value=c;
+            }
+        </script>
+    </head>
+    <body>
+        <h2>자바스크립트에서 html요소에 접근하는 방법</h2>
+        <form name="myform" method="post" action="#">
+        <table>  
+            <tr>
+                <td>첫번째 정수</td>
+                <td><input type="text" id="first" class="input_text"></td>
+            </tr>
+            <tr>
+                <td>두번째 정수</td>
+                <td><input type="text" id="second" class="input_text"></td>
+            </tr>
+            <tr>
+                <td>총합</td>
+                <td><input type="text" id="result" class="input_text"></td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="계산" class="btn" onclick="calc()"></td>
+                <td> <input type="reset" value="취소" class="btn"></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>

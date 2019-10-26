@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            var answer=53;
+            var count=0;
+         function guess(){
+            var i=document.getElementById("x").value;
+            count++;
+            if(i==answer) {
+                if(count<=5){
+                    document.getElementById("hint").value="정답입니다";
+                    document.getElementById("y").value=count;
+                }
+                else{document.getElementById("hint").value="횟수를 초과했습니다";
+                    }
+            }
+            else if(i>answer){
+                if(count<=5){
+                    document.getElementById("hint").value="더 작습니다";
+                    document.getElementById("y").value=count;
+                }
+                else{document.getElementById("hint").value="횟수를 초과했습니다";
+                    }
+            }
+            else if(i<answer){
+                if(count<=5){
+                    document.getElementById("hint").value="더 큽니다";
+                    document.getElementById("y").value=count;
+                }
+                else{document.getElementById("hint").value="횟수를 초과했습니다";
+                    }
+            }
+         }
+        </script>
+        이 게임은 컴퓨터가 생성한 숫자를 맞추는 게임입니다.<br>
+        숫자는 1부터 100 사이에 있습니다.
+        <form action="#">
+            숫자: <input type="text" id="x"> <input type="button" value="확인" onclick="guess()"> <br>
+            추측횟수<input type="text" id="y">  힌트<input type="text" id="hint">
+        </form>
+    </body>
+</html>

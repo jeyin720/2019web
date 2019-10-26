@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>구구단 퀴즈</h1>
+        <hr>
+        <script>
+        function randomInt(){
+            return Math.floor(Math.random()*9)+1;
+        }
+        var randx=randomInt();
+        var randy=randomInt();
+        var answer=prompt(randx+"*"+randy+" 값은 얼마?");
+        if(answer==randx*randy){
+            document.write("정답입니다");
+        }
+        else document.write("아니오");
+
+        </script>
+    </body>
+</html>
