@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h3>this 활용</h3>
+        <hr>
+        <input type="button" id="btn1" value="버튼" onclick="change('btn1','red','25px');">
+        <input type="button" id="btn2" value="버튼" onclick="change('btn2','blue','35px');">
+        
+        <script>
+            function change(btn,color,size){
+                var button=document.getElementById(btn);
+
+                button.style.color=color;
+                button.style.fontSize=size
+            }
+        </script>
+    </body>
+</html>

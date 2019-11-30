@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <script>
+        function setBorder(){
+            var set=document.getElementById("sel");
+            set.style.border="3px dotted red";
+        }
+        function countP(){
+            
+            var p=document.getElementsByTagName("p");
+            var count=p.length;
+            alert(count);
+        }
+    </script>
+    <body>
+        <h3>자바스크립트란</h3>
+        <input type="button" value="border" onclick=setBorder()>
+        <input type="button" value="p" onclick=countP()>
+        <hr>
+        <p>도대체 불륜녀는 누구인가. SBS 월화드라마백화점 VIP</p>
+        <p><span id="sel">가 무엇보다 흥미로운 건</span> 박성준은 의심케 하는 불륜의 대사잉 누군가 하는 점이다.</p>
+        <p>물론 그렇다고 이 드라마가 소위 말하는 불륜드라마라는 건 아니다. 결국 하려는 이야기는 이들이 일하는 전담팀으로 대변되는 돈과 서열에 의해 굴러가는 우리네 사회이고, 거기서 나정선, 이현아, 송미나 그리고 온유리</p>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            var book=new Object();
+            book.title='동백꽃 필 무렵';
+            book.author='저자';
+            book.price=1000;
+            book.read=function(){
+                document.write("읽다<br>");
+            }
+            book.buy=function(){
+                document.write("사다<br>");
+            }
+
+            document.write(book.title+"<br>");
+            document.write(book.author+"<br>");
+            document.write(book.price+"<br>");
+
+            book.read();
+            book.buy();
+            
+        </script>
+    </body>
+</html>

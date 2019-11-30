@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h3>문제2번</h3>
+        <hr>
+        <div>
+            <p>Q.제일 자신 있는 언어는?</p>
+            <button onclick="addAnswer(this,'한국어')">답보기</button>
+        </div>
+        <div>
+                <p>Q. 크리스마스 이브는 무슨 요일?</p>
+                <button onclick="addAnswer(this,'화요일')">답보기</button>
+        </div>
+        <script>
+            function addAnswer(Button,answer){
+                var Answer=document.createElement("p");
+                Answer.innerHTML=answer;
+                Button.parentElement.appendChild(Answer);
+                Answer.onclick=function(){
+                    Button.parentElement.removeChild(Answer);
+                }
+            }
+        </script>
+    </body>
+</html>

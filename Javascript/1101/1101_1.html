@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function withdraw(money){
+                this.balance-=money;
+            };
+            function deposit(money){
+                this.balance+=money;
+            };
+            var account=new Object();
+            account.owner='kim';
+            account.code=111;
+            account.balance=3500;
+            account.deposit=deposit();
+            account.withdraw=withdraw();
+
+            account.deposit(100);
+            for(var name in account){
+                alert(account[name]);
+            }
+        </script>
+    </body>
+</html>

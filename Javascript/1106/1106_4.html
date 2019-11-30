@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            var bookArray=new Array();
+            var count=2;
+            for(var i=0;i<count;i++){
+                var book=new Object();
+                var input=prompt("책 정보를 입력하세요 (제목,저자,가격)");
+                info=input.split(",");
+
+                book.title=info[0];
+                book.author=info[1];
+                book.price=info[2];
+
+                bookArray[i]=book;
+            }
+
+            for(var i=0;i<count;i++){
+                for(var name in bookArray[i]){
+                    document.write(bookArray[i][name]+"<br>");
+                }
+                document.write("<br>");
+            }
+
+            document.write("<hr>가장 가격이 비싼 책은.. <br>");
+
+            var max=bookArray[0];
+            for(var i=0;i<count;i++){
+               if(max.price<bookArray[i].price){
+                   max=bookArray[i];
+               }
+            }
+            for(var name in max){
+                document.write(max[name]+"<br>");
+            }
+        </script>
+    </body>
+</html>

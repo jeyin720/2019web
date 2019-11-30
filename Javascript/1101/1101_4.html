@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+           function car(model,speed,color){
+               this.model=model;
+               this.speed=speed;
+               this.color=color;
+               this.brake=function(){this.speed=0;};
+               this.accel=function(){this.speed+=10;};
+           }
+            var car1={
+                'model':'bmw',
+                'speed':100,
+                'color':'red',
+                brake:function(){this.speed=0;},
+                accel:function(){this.speed+=10;}
+            }
+            var car2=new car('h',80,'yellow');
+
+            car1.accel();
+            car2.brake();
+
+            document.write(car1.speed+"<br>");
+            document.write(car2.speed);
+
+            
+        </script>
+    </body>
+</html>

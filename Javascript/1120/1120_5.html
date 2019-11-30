@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            input{ width:50px; height:50px; margin: 3px; background:lightgoldenrodyellow;}
+            #display{width:150px; height:30px; padding-left:5px; background:white;}
+            .wrap{width:300px;height:350px; background: #888;text-align: center; padding-top:10px;}
+        </style>
+    </head>
+    
+    <body>
+        <div class="wrap">
+        
+        <input type="text" id="display" > <br>
+        <input type="button" id="1" value="1" onclick="calc(id)">
+        <input type="button" id="2" value="2" onclick="calc(id)">
+        <input type="button" id="3" value="3" onclick="calc(id)">
+        <input type="button" id="/" value="/" onclick="calc(id)"><br>
+        <input type="button" id="4" value="4" onclick="calc(id)">
+        <input type="button" id="5" value="5" onclick="calc(id)">
+        <input type="button" id="6" value="6" onclick="calc(id)">
+        <input type="button" id="*" value="*" onclick="calc(id)"><br>
+        <input type="button" id="7" value="7" onclick="calc(id)">
+        <input type="button" id="8" value="8" onclick="calc(id)">
+        <input type="button" id="9" value="9" onclick="calc(id)">
+        <input type="button" id="-" value="-" onclick="calc(id)"><br>
+        <input type="button" id="0" value="0" onclick="calc(id)">
+        <input type="button" id="+" value="+" onclick="calc(id)">
+        <input type="button" id="sqrt" value="sqrt" onclick="calc(id)">
+        <input type="button" id="abs" value="abs" onclick="calc(id)"><br>
+        <input type="button" id="remove" value="←" onclick="removeOne()">
+        <input type="button" id="clear" value="clear" onclick="clearDisplay()">
+        <input type="button" id="Enter" value="Enter" onclick="compute()"><br>
+    </div>
+        <script>
+            function compute(){
+                var exp=document.getElementById("display").value;
+                document.getElementById("display").value=eval(exp);
+            }
+            function calc(val){
+                var text=document.getElementById("display").value;
+                text+=val;
+                document.getElementById("display").value=text;
+            }
+            function clearDisplay(){
+                document.getElementById("display").value="";
+            }
+            function removeOne(){
+                var text=document.getElementById("display").value;
+                var remove=text.substr(0,(text.length)-1);
+                document.getElementById("display").value=remove;
+
+            }
+        </script>
+    </body>
+</html>

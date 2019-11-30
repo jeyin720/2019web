@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function buy(){
+                    document.write('사다<br>');
+                }
+            function read(){
+                document.write('읽다<br>');
+            }
+            function chaek(title,author,price){
+                this.title=title;
+                this.author=author;
+                this.price=price;
+                this.read=read;
+                this.buy=buy;
+            }
+
+            var book= new chaek('동백꽃 필 무렵','재미따',10000);
+
+            document.write(book.title+"<br>");
+            document.write(book.author+"<br>");
+            document.write(book.price+"<br>");
+
+            book.read();
+            book.buy();
+            
+        </script>
+    </body>
+</html>

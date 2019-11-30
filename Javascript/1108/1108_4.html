@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        
+        <h3>innderHTML 활용 : 아래 글자에 클릭하면 예쁜 강아지가 보입니다.</h3>
+        <hr>
+        <p id="myp" style="color:blue" onclick="change()">여기를
+        <span id="span2" style="color:red">클릭하세요.</span> </p>
+        <script>
+            function change(){
+                var p=document.getElementById("myp");
+                p.innerHTML="나의 <img src='../img/peach1.PNG'> 복숭아";
+            }
+        </script>
+    </body>
+</html>

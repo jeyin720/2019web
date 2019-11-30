@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h3>겜블링 게임</h3>
+        각 숫자를 클릭하면 0에서 2 사이의 난수로 바뀝니다. 모두 같은 수가 나오면 승리합니다.
+        <hr>
+        <table border width=300 height=200>
+            <tr>
+                <td id="first" onclick="game(0)">0</td>
+                <td id="second" onclick="game(1)">0</td>
+                <td id="third" onclick="game(2)">0</td>
+                
+            </tr>
+        </table>
+        <div id="msg" onclick="reset()">시작</div>
+        <script>
+            function game(i){
+                var rand=Math.random()*3;
+                var rand1=Math.floor(rand);
+            
+                switch(i){
+                    case 0: document.getElementById("first").innerHTML=rand1;break;
+                    case 1: document.getElementById("second").innerHTML=rand1;break;
+                    case 2: document.getElementById("third").innerHTML=rand1;break;
+                }
+                var firstV=document.getElementById("first").innerHTML;
+                var secondV=document.getElementById("second").innerHTML;
+                var thirdV=document.getElementById("third").innerHTML;
+
+                for(var k=0;k<3;k++){
+                    if(firstV==secondV&&secondV==thirdV){
+                        document.getElementById("msg").innerHTML="성공";
+                    }
+                    else{
+                        document.getElementById("msg").innerHTML="실패";
+                    }
+                }
+            }
+            function reset(){
+                document.getElementById("first").innerHTML=0;
+                document.getElementById("second").innerHTML=0;
+                document.getElementById("third").innerHTML=0;
+                document.getElementById("msg").innerHTML="시작";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            span{
+                visibility:hidden;
+                color:brown;
+            }
+        </style>
+    </head>
+     <script>   
+        function showHide(){
+            var span=document.getElementsByTagName("span");
+            for(var i=0;i<span.length;i++){
+                var sty=window.getComputedStyle(span[i]);
+                var txt=sty.getPropertyValue('visibility');
+            
+            if(txt=='hidden'){
+                    span[i].style.visibility='visible';
+            }
+            else if(txt=='visible'){
+                    span[i].style.visibility='hidden';
+                }
+            }
+        }
+    </script>
+    <body>
+        <h3>다음 빈 곳에 숨은 단어?</h3>
+        <input type="button" value="show/hide" onclick=showHide()>
+        <hr>
+        <ul>
+            <li>드라마는 ( <span>동백꽃 필 무렵</span> )</li>
+            <li>동백꽃 ( <span>필 무렵</span> )</li>
+            <li>최고의 ( <span>드라마</span> )</li>
+        </ul>
+    </body>
+   
+</html>

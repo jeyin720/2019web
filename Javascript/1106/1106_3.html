@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+
+            function sin(){
+                var num=document.getElementById("put").value;
+                var result;
+                result=Math.sin(num);
+                document.getElementById("result").value=result;
+            }
+            function log(){
+                var num=document.getElementById("put").value;
+                var result;
+                result=Math.log(num);
+                document.getElementById("result").value=result;
+            }
+            function sqrt(){
+                var num=document.getElementById("put").value;
+                var result;
+                result=Math.sqrt(num);
+                document.getElementById("result").value=result;
+            }
+            function abs(){
+                var num=document.getElementById("put").value;
+                var result;
+                result=Math.abs(num);
+                document.getElementById("result").value=result;
+            }
+
+        </script>
+        <h3>수학 공식 계산</h3>
+        <hr>
+        입력<input type="text" name="put" id="put"><br>
+        계산결과<input type="text" name="result" id="result"><br>
+        <input type="button" value="sin" id="sin" onclick=sin();>
+        <input type="button" value="log" id="log" onclick=log();>
+        <input type="button" value="sqrt" id="sqrt" onclick=sqrt();>
+        <input type="button" value="abs" id="abs" onclick=abs();>
+        
+        
+    </body>
+</html>
