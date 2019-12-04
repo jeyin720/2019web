@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script>
+        function change() {
+            var imga = document.getElementById("peach");
+            var target = document.getElementById("sel");
+
+            var index = target.selectedIndex;
+            imga.src = target.options[index].value;
+
+            document.getElementById("mySpan").innerHTML = document.getElementById("peach").width + " X " + document
+                .getElementById("peach").height;
+
+        }
+    </script>
+</head>
+
+
+<body onload="change()">
+
+    <h3>onload로 이미지 크기 출력</h3>
+    <hr>
+    <select id="sel" onchange="change()">
+        <option value="../img/peach1.PNG">복ㄴ숭아</option>
+        <option value="../img/초코송이.jpg">초코송이</option>
+        <option value="../img/jjajang.jpg">짜장면</option>
+    </select>
+    <span id="mySpan">이미지의 크기</span>
+    <br>
+    <img id="peach">
+</body>
+
+</html>

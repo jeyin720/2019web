@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        input {
+            background: aquamarine;
+        }
+    </style>
+    <script>
+        function change() {
+            var Peach = document.getElementById("peach");
+            alert(Peach.height);
+            alert(Peach.width);
+            Peach.src = "../img/peach4.jpg";
+        }
+    </script>
+</head>
+
+<body>
+    <img src="../img/peach2.png" id="peach" width="160px" height="150px">
+    <input type="button" name="" value="클릭" onclick="change()">
+</body>
+
+</html>
