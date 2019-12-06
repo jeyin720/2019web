@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var sum = 0;
+
+        function cal(obj) {
+            if (obj.checked == false) {
+                sum -= parseInt(obj.value);
+            } else sum += parseInt(obj.value);
+
+            document.getElementById("t").value = sum;
+        }
+    </script>
+    <h3>자동 계산</h3>
+    <hr>
+    <input type="checkbox" name="buy" value="10000" onclick="cal(this)">모자 1만원
+    <input type="checkbox" name="buy" value="30000" onclick="cal(this)">구두 3만원
+    <input type="checkbox" name="buy" value="80000" onclick="cal(this)">명품가방 8만원
+    <br>
+    지불 하실 금액<input type="text" id="t">
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        #im {
+            border: 20px solid lightseagreen;
+        }
+    </style>
+</head>
+
+<body onload="change()">
+    <script>
+        var files = ['../img/peach1.PNG', '../img/peach2.png', '../img/peach3.png', '../img/peach4.jpg'];
+        var img1 = new Array();
+        for (var i = 0; i < files.length; i++) {
+            img1[i] = new Image();
+            img1[i].src = files[i];
+        }
+
+        var next = 0;
+
+        function change() {
+            var img2 = document.getElementById("im");
+            img2.src = files[next];
+            next++;
+            next %= files.length;
+
+        }
+    </script>
+    <h3>new Image()로 이미지 로딩</h3>
+    <hr>
+    <p>이미지를 클릭하면 다음 이미지를 보여줍니다</p>
+    <img id="im" src="../img/instagram.jpg" onclick="change()">
+</body>
+
+</html>
