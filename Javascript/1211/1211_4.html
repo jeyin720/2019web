@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        function change(obj) {
+            document.getElementById("i").src = obj.value;
+        }
+    </script>
+    <h3>라디오 버튼을 클릭하면 이미지를 출력합니다</h3>
+    <hr>
+    <input type="radio" name="peach" value="../img/peach1.PNG" onclick="change(this)">라이언1
+    <input type="radio" name="peach" value="../img/peach2.png" onclick="change(this)">라이언2
+    <input type="radio" name="peach" value="../img/peach3.png" onclick="change(this)">라이언3
+    <br>
+    <img id="i">
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body id="body">
+    <script>
+        function p() {
+            var col;
+            switch (event.keyCode) {
+                case 38:
+                    col = "red";
+                    break;
+                case 39:
+                    col = "blue";
+                    break;
+                case 40:
+                    col = "yellow";
+                    break;
+                case 37:
+                    col = "white";
+                    break;
+            }
+            document.getElementById("body").style.background = col;
+        }
+    </script>
+    키이벤트 예제 <input type="text" onkeyDown="javascript:p();">
+</body>
+
+</html>

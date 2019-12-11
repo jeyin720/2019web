@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        function change() {
+            var obj = document.getElementById("fruit");
+            var index = obj.selectedIndex;
+            document.getElementById("i").src = obj.options[index].value;
+
+
+        }
+    </script>
+    <h3>과일 출력</h3>
+    <hr>
+    과일을 선택하면 이미지가 출력됩니다
+    <select id="fruit" onchange="change()">
+        <option value="../img/jjajang.jpg">사과</option>
+        <option value="../img/peach4.jpg">딸기</option>
+        <option value="../img/tangsuyook.jpg">바나나</option>
+    </select><br>
+    <img src="../img/peach1.PNG" id="i">
+</body>
+
+</html>

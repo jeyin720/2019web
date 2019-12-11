@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        function keyevent(obj) {
+            console.log(event.keyCode);
+        }
+    </script>
+    <table border>
+        <tr>
+            <td>onKeyDown</td>
+            <td><input type="text" onkeyPress="javascript:keyevent(this);"></td>
+        </tr>
+        <tr>
+            <td>onKeyUp</td>
+            <td><input type="text" onkeyDown="javascript:keyevent(this);"></td>
+        </tr>
+        <tr>
+            <td>onKeyPress</td>
+            <td><input type="text" onkeyDown="javascript:keyevent(this);"></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
