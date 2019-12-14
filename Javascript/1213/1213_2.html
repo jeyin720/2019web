@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        #display {
+            width: 330px;
+        }
+
+        input {
+            width: 80px;
+            height: 30px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>계산기 만들기</h3>
+    <hr>
+    <input type="text" id="display"> <br>
+
+    <input type="button" id="back" value="BACK" onclick="removeOne()">
+    <input type="button" id="ce" value="CE" onclick="clearDisplay()">
+    <input type="button" id="c" value="C" onclick="clearDisplay()">
+    <input type="button" id="=" value="=" onclick="compute()"><br>
+    <input type="button" id="7" value="7" onclick="calc(id)">
+    <input type="button" id="8" value="8" onclick="calc(id)">
+    <input type="button" id="9" value="9" onclick="calc(id)">
+    <input type="button" id="/" value="/" onclick="calc(id)"><br>
+    <input type="button" id="4" value="4" onclick="calc(id)">
+    <input type="button" id="5" value="5" onclick="calc(id)">
+    <input type="button" id="6" value="6" onclick="calc(id)">
+    <input type="button" id="*" value="*" onclick="calc(id)"><br>
+    <input type="button" id="1" value="1" onclick="calc(id)">
+    <input type="button" id="2" value="2" onclick="calc(id)">
+    <input type="button" id="3" value="3" onclick="calc(id)">
+    <input type="button" id="-" value="-" onclick="calc(id)"><br>
+    <input type="button" id="0" value="0" onclick="calc(id)">
+    <input type="button" id="+" value="+" onclick="calc(id)">
+    <input type="button" id="root" value="ROOT" onclick="calc(id)">
+    <input type="button" id="abs" value="ABS" onclick="calc(id)"><br>
+    <script>
+        function compute() {
+            var exp = document.getElementById("display").value;
+            document.getElementById("display").value = eval(exp);
+        }
+
+        function calc(val) {
+            var text = document.getElementById("display").value;
+            if (val == "root") {
+                document.getElementById("display").value = Math.sqrt(eval(text));
+            } else if (val == 'abs') {
+                document.getElementById("display").value = Math.abs(eval(text));
+            } else {
+
+                if (text == '0') {
+                    text = val;
+                } else text += val;
+                document.getElementById("display").value = text;
+            }
+        }
+
+        function clearDisplay() {
+            document.getElementById("display").value = "0";
+        }
+
+        function removeOne() {
+            var text = document.getElementById("display").value;
+            var remove = text.substr(0, (text.length) - 1);
+            document.getElementById("display").value = remove;
+
+        }
+    </script>
+    </script>
+</body>
+
+</html>

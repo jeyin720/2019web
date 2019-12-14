@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+</head>
+
+<body ondblclick="change()">
+    <script>
+        function change() {
+            var rand1 = new Array();
+            for (var i = 0; i < 3; i++) {
+                rand1[i] = parseInt(Math.random() * 256);
+            }
+            document.body.style.background = "rgb(" + rand1[0] + ',' + rand1[1] + ',' + rand1[2] + ")";
+        }
+    </script>
+    <h3>바탕 아무 곳에나 더블 클릭</h3>
+    <hr>
+    바탕 아무곳
+</body>
+
+</html>
